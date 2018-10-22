@@ -16,12 +16,12 @@ function bSearch(arr, e) {
     if (arr[m] < e) {
       l = m + 1;
     }
-    return -1;
   }
+  return -1;
 }
 
 var arr = [1, 3, 4, 6, 7, 8];
-var e = 0;
+var e = 10;
 var i = bSearch(arr, e);
 
 console.log(i);
