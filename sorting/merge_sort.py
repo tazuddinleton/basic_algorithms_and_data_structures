@@ -1,51 +1,36 @@
+def merge_sort(a, p, r):
+    if(p < r):
+        q = p+r//2
+        merge_sort(a, p, q)
+        merge_sort(a, q+1, r)
+        # merge(a, p, q, r)
 
 
-A = [1, 1, 1]
-B = [2, 5, 8]
+def merge(a, p, q, r):
+    n1 = q-p
+    n2 = r-q
+    left = []
+    right = []
+    for i in range(0, n1):
+        left.append(a[p+i])
+    for j in range(0, n2):
+        right.append(a[q+j])
 
-
-def merge(left_half, right_half, left_start, left_end, right_start, right_end):
-    merged = []
-    while left_start <= left_end and right_start <= right_end:
-        if left_half[left_start] <= right_half[right_start]:
-            merged.append(left_half[left_start])
-            left_start += 1
+    left.append(999999)
+    right.append(999999)
+    i = 0
+    j = 0
+    for k in range(p, r):
+        print(p, r, k, i, j)
+        if left[i] <= right[j]:
+            a[k] = left[i]
+            i = i + 1
         else:
-            merged.append(right_half[right_start])
-            right_start += 1
-
-    if left_start < left_end:
-        while left_start <= left_end:
-            print(left_start)
-            merged.append(left_half[left_start])
-            left_start += 1
-
-    if right_start < right_end:
-        while right_start <= right_end:
-            merged.append(right_half[right_start])
-            right_start += 1
-    return merged
+            a[k] = right[j]
+            j = j + 1
 
 
-merged = merge(A, B, 0, len(A)-1, 0, len(B)-1)
-print(merged)
-
-
-# def merge_sort(array, left, right):
-#     count = '-'
-#     if left >= right:
-#         print('--->|')
-#         return
-#     print(count)
-#     count+='-'
-#     middle = (left + right)//2
-#     print('merge_sort('+str(array)+str(left)+',' + str(right)+',' +str(middle)+')')
-#     merge_sort(array, left, middle)
-#     merge_sort(array, middle+1, right)
-#     merged = merge(array,, left_start, left_end, right_start, right_end)
-#     return merged
-
-# array = [1,9,2,8,3,7,6,10,11]
-
-# merged = merge_sort(array, 0, len(array)-1)
-# print(merged)
+a = [6, 1, 2, 3, 4, 19, 19, 3, 32, 39, 399, 39, 21, 3, 4, 5, 2, 9]
+p, q, r = 0, 0+len(a)//2, len(a)
+merge(a, p, q, r)
+# merge_sort(a, p, r)

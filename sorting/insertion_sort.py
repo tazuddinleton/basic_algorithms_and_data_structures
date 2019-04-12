@@ -1,39 +1,21 @@
-
-# def insertion_sort(arr):
-#     l = len(arr)
-#     for j in range(1, l):        
-#         i = j -1
-#         key = arr[j]
-#         while i > -1 and arr[i] > key:
-#             arr[i+1] = arr[i]
-#             i -= 1
-#         arr[i+1] = key
-#     return arr
-
-# arr = [5,2,4,6,1,3]
-# sorted_arr =  insertion_sort(arr)
-# print(sorted_arr)
-
-def insertion_sort_desc(arr):
-    l = len(arr)
-    for j in range(1, l):
-        i = j - 1
-        key = arr[j]
-        while i > -1 and arr[i] < key:
-            arr[i+1] = arr[i]
-            i -= 1
-        arr[i+1] = key
-    return arr
-# desc = insertion_sort_desc(arr)
-# print(desc)
+def insertion_sort(a):
+    for i in range(1, len(a)):
+        j = i - 1
+        key = a[i]
+        while j >= 0 and key < a[j]:
+            a[j+1] = a[j]
+            j = j-1
+        a[j+1] = key
+    return a
 
 
-def sort_desc(s, l, r):    
-    arr = []
-    for i in range(l, r+1):        
-        arr.append(s[i])
-    sorted_arr = insertion_sort_desc(arr)
-    print(sorted_arr)
+# a = [5, 2, 6, 1, 4, 3]
+b = insertion_sort([3, 9, 1, 4, 5])
+print(b)
+# print('before ', b)
+# for i in range(0, len(b)//2):
+#     k = b[i]
+#     b[i] = b[len(b)-1-i]
+#     b[len(b)-1-i] = k
 
-sort_desc('abcdef',0,5)
-
+# print('after ', b)
