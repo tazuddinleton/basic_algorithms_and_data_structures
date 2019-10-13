@@ -17,8 +17,8 @@ def sort(array, left, right):
     if(left >= right):
         return
 
-    leton = array[(left+right)//2]
-    index = partition(array, left, right, leton)
+    pivot = array[(left+right)//2]
+    index = partition(array, left, right, pivot)
     sort(array, left, index-1)
     sort(array, index, right)
 
