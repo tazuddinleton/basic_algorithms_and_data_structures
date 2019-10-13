@@ -1,3 +1,5 @@
+package data_structures.linked_lists;
+
 public class LinkedList {
     private int count;
     private Node root;

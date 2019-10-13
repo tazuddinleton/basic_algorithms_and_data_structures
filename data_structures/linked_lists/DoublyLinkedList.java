@@ -1,3 +1,5 @@
+package data_structures.linked_lists;
+
 public class DoublyLinkedList {
     private int count;
     private Link head;

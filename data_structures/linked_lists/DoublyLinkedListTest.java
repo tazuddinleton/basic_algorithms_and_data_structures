@@ -1,3 +1,5 @@
+package data_structures.linked_lists;
+
 public class DoublyLinkedListTest {
     public static void main(String[] args) {
         DoublyLinkedList list = new DoublyLinkedList();

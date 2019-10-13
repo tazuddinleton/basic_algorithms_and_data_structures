@@ -1,3 +1,5 @@
+package data_structures.trees;
+
 /**
  * 1. insert 2. find 3. traversal a. ordered traversal b. inordered traversal.
  * 

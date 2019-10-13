@@ -1,3 +1,5 @@
+package searching;
+
 public class LinearSearch {
     private Object[] data;
     private int count;

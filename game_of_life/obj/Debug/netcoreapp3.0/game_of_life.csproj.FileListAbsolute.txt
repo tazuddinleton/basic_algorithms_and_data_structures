@@ -1,0 +1,11 @@
+F:\Lab\basic_algorithms_and_data_structures\game_of_life\bin\Debug\netcoreapp3.0\game_of_life.exe
+F:\Lab\basic_algorithms_and_data_structures\game_of_life\bin\Debug\netcoreapp3.0\game_of_life.deps.json
+F:\Lab\basic_algorithms_and_data_structures\game_of_life\bin\Debug\netcoreapp3.0\game_of_life.runtimeconfig.json
+F:\Lab\basic_algorithms_and_data_structures\game_of_life\bin\Debug\netcoreapp3.0\game_of_life.runtimeconfig.dev.json
+F:\Lab\basic_algorithms_and_data_structures\game_of_life\bin\Debug\netcoreapp3.0\game_of_life.dll
+F:\Lab\basic_algorithms_and_data_structures\game_of_life\bin\Debug\netcoreapp3.0\game_of_life.pdb
+F:\Lab\basic_algorithms_and_data_structures\game_of_life\obj\Debug\netcoreapp3.0\game_of_life.csprojAssemblyReference.cache
+F:\Lab\basic_algorithms_and_data_structures\game_of_life\obj\Debug\netcoreapp3.0\game_of_life.AssemblyInfoInputs.cache
+F:\Lab\basic_algorithms_and_data_structures\game_of_life\obj\Debug\netcoreapp3.0\game_of_life.AssemblyInfo.cs
+F:\Lab\basic_algorithms_and_data_structures\game_of_life\obj\Debug\netcoreapp3.0\game_of_life.dll
+F:\Lab\basic_algorithms_and_data_structures\game_of_life\obj\Debug\netcoreapp3.0\game_of_life.pdb

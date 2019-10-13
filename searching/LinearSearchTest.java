@@ -1,3 +1,5 @@
+package searching;
+
 public class LinearSearchTest {
     public static void main(String[] args) {
         LinearSearch li = new LinearSearch(10);

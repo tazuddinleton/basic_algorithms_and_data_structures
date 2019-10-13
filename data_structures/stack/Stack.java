@@ -1,3 +1,4 @@
+package data_structures.stack;
 
 /**
  * 1. push() 2. pop() 3. peek() 4. find() 5. size() 6. isFull() 7. isEmpty()

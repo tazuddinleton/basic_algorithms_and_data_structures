@@ -1,3 +1,5 @@
+package data_structures.stack;
+
 public class StackTest {
     public static void main(String[] args) {
         Stack stack = new Stack();
