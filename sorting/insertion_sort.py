@@ -1,21 +1,15 @@
+## The idea is to start with an element and compare it with all other elements left side
+## till the end of the array. For example if we start with 7 there are no elements to compare
+## start with 3 and we have one element to the left of 3. 
+
 def insertion_sort(a):
-    for i in range(1, len(a)):
+    for i in  range(1, len(a)):
         j = i - 1
-        key = a[i]
-        while j >= 0 and key < a[j]:
+        k = a[i]
+        while j >=  0 and k < a[j]:
             a[j+1] = a[j]
-            j = j-1
-        a[j+1] = key
+            a[j] = k
+            j -= 1
     return a
 
-
-# a = [5, 2, 6, 1, 4, 3]
-b = insertion_sort([3, 9, 1, 4, 5])
-print(b)
-# print('before ', b)
-# for i in range(0, len(b)//2):
-#     k = b[i]
-#     b[i] = b[len(b)-1-i]
-#     b[len(b)-1-i] = k
-
-# print('after ', b)
+print(insertion_sort([7,3,1,2,4,5,6]))
