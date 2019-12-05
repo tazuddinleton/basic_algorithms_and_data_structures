@@ -1,8 +1,13 @@
+## Pick a pivot
+## Send elements greater than pivot to the right of the pivot
+## Send eleemnts less than the pivot to the left of the pivot
+## Repeat this process until the array is sorted
+
 def partition(array, left, right, pivot):
     while(left <= right):
-        while(array[left] < pivot):
+        while(array[left] < pivot):            
             left += 1
-        while(array[right] > pivot):
+        while(array[right] > pivot):            
             right -= 1
         if(left <= right):
             elem = array[left]
@@ -18,6 +23,7 @@ def sort(array, left, right):
         return
 
     pivot = array[(left+right)//2]
+    print('pivot : ', pivot)    
     index = partition(array, left, right, pivot)
     sort(array, left, index-1)
     sort(array, index, right)
@@ -28,4 +34,7 @@ def quickSort(array):
     return array
 
 
-print(quickSort([3, 2, 1]))
+# print(quickSort([3, 2, 1]))
+# print(quickSort([15, 3, 2, 1, 9, 5, 7, 8, 6]))
+print(quickSort([5,4,1,2,9,2,8]))
+
