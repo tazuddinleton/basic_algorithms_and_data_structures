@@ -1,3 +1,14 @@
+
+/*
+    Quick Sort
+
+    1. Pick a pivot 
+    2. Send elements that are less than pivot to the left
+    3. Send elements that are greater than pivot to the right
+    4. Now repeat the process with each sub array (before pivot and after pivot)
+
+*/
+
 #include <stdio.h>
 
 int partition(int array[], int start, int end, int pivot);
@@ -9,7 +20,7 @@ int main(char *args[])
     
     int array[] = {5, 4, 1, 2, 9, 2, 8};
     quickSort(array, 0, 6);
-
+    printArray(array, 6);
     return 0;
 }
 
@@ -29,8 +40,6 @@ int partition(int array[], int start, int end, int pivot)
 
         if (start <= end)
         {
-            printf("swap started\n");
-            printf("%d %d\n", array[start], array[end]);
             int elem = array[start];
             array[start] = array[end];
             array[end] = elem;
@@ -39,7 +48,7 @@ int partition(int array[], int start, int end, int pivot)
             end--;
         }
     }
-    return end;
+    return start;
 }
 
 void quickSort(int array[], int start, int end)
@@ -52,20 +61,5 @@ void quickSort(int array[], int start, int end)
         quickSort(array, pIndex, end);
     }
 }
-void printArray(int array[], int len)
-{
-    for (int i = 0; i < len; i++)
-    {
-        printf("%d\n", array[i]);
-    }
-}
 
-/*
-    Quick Sort
 
-    1. Pick a pivot 
-    2. Send elements that are less than pivot to the left
-    3. Send elements that are greater than pivot to the right
-    4. Now repeat the process with each sub array (before pivot and after pivot)
-
-*/
